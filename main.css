@@ -1,0 +1,105 @@
+body {
+  padding: 50px;
+  background-color: black;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.cont-wrap {
+  background-color: #eeece5;
+  width: 375px;
+  height: 812px;
+  margin: auto;
+  position: relative;
+}
+header {
+  width: 327px;
+  height: 43px;
+  position: absolute;
+  left: 27px;
+  top: 56px;
+}
+header .header-left {
+  border: 1px solid #dccdb6;
+  width: 43px;
+  height: 43px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+}
+header .header-left img {
+  width: 43px;
+  height: 43px;
+}
+header .header-title {
+  position: absolute;
+  font-weight: 500;
+  width: 49px;
+  height: 27px;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.24px;
+  text-align: center;
+  left: 128px;
+  top: 8px;
+}
+header .header-right {
+  position: absolute;
+  width: 66px;
+  height: 24px;
+  left: 261px;
+  top: 9.5px;
+}
+header .header-right span {
+  color: #ff5f00;
+}
+nav {
+  position: absolute;
+  width: 375px;
+  height: 76px;
+  left: 0px;
+  top: 736px;
+  background: linear-gradient(163.63deg, #00bdb2 11.35%, #c4e7b8 139.96%);
+}
+main {
+}
+.sec1 {
+  position: absolute;
+  width: 375px;
+  height: 155px;
+  /* border: 1px solid red; */
+  top: 132px;
+}
+.sec1 .sec1-box {
+  height: 155px;
+  width: 279px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 48px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 16px rgba(226, 191, 66, 0.19);
+  /* border: 1px solid red; */
+}
+.sec1 .sec1-box .account-number {
+  display: flex;
+  width: 135px;
+  height: 21px;
+  /* border: 1px solid red; */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #858585;
+  margin-left: 73px;
+  margin-top: 14px;
+  letter-spacing: -0.24px;
+}
+.sec1 .sec1-box .transfer {
+  font-weight: 500;
+  font-size: 14px;
+  width: 26px;
+  height: 21px;
+  /* border: 1px solid red; */
+}
