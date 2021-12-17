@@ -2,10 +2,7 @@ body {
   padding: 50px;
   background-color: black;
   font-family: "Noto Sans KR", sans-serif;
-  font-weight: 300;
-  font-size: 14px;
 }
-
 .cont-wrap {
   background-color: #eeece5;
   width: 375px;
@@ -27,8 +24,8 @@ header .header-left {
   box-sizing: border-box;
   border-radius: 50%;
   overflow: hidden;
-  left: 0;
-  top: 0;
+  /* left: 0;
+  top: 0; */
 }
 header .header-left img {
   width: 43px;
@@ -47,11 +44,6 @@ header .header-title {
   top: 8px;
 }
 header .header-right {
-  position: absolute;
-  width: 66px;
-  height: 24px;
-  left: 261px;
-  top: 9.5px;
 }
 header .header-right span {
   color: #ff5f00;
@@ -65,13 +57,18 @@ nav {
   background: linear-gradient(163.63deg, #00bdb2 11.35%, #c4e7b8 139.96%);
 }
 main {
+  position: absolute;
+  width: 375px;
+  height: 604px;
+  border: 1px solid red;
+  left: 0;
+  top: 130px;
 }
 .sec1 {
   position: absolute;
   width: 375px;
   height: 155px;
-  /* border: 1px solid red; */
-  top: 132px;
+  border: 1px solid red;
 }
 .sec1 .sec1-box {
   height: 155px;
@@ -84,22 +81,43 @@ main {
   /* border: 1px solid red; */
 }
 .sec1 .sec1-box .account-number {
-  display: flex;
+  position: absolute;
   width: 135px;
   height: 21px;
   /* border: 1px solid red; */
   font-weight: 500;
   font-size: 14px;
-  line-height: 21px;
+  /* line-height: 21px; */
   color: #858585;
-  margin-left: 73px;
-  margin-top: 14px;
+  left: 73px;
+  top: 14px;
   letter-spacing: -0.24px;
 }
 .sec1 .sec1-box .transfer {
+  position: absolute;
   font-weight: 500;
   font-size: 14px;
   width: 26px;
   height: 21px;
+  letter-spacing: -0.24px;
+  top: 14px;
+  right: 17px;
   /* border: 1px solid red; */
+}
+.sec1 .sec1-box .budget {
+  position: absolute;
+  /* border: 1px solid red; */
+  height: 36px;
+  width: 160px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 2px;
+  text-align: center;
+  top: 51px;
+  left: 59px;
+}
+.sec1 .sec1-box .budget small {
+  font-weight: 500;
+  font-size: 14px;
 }
