@@ -16,6 +16,11 @@
 
 
   <div class="cont-wrap">
+    
+    <div class="top_bar">
+      <div class="time"><img src="./image/Time Style.png" alt=""></div>
+    </div>
+
   <!-- Header -->
     <header>
       <div class="header-left"> <!--profile-->
@@ -23,18 +28,18 @@
       </div>
       <h1 class="header-title">생활비</h1>
       <div class="header-right">
-        <span class="material-icons"></span>        
-        <span class="material-icons"></span>
+        <span class="scancode"><img src="./image/scancode.png" alt=""></span>        
+        <span class="search"><img src="./image/search.png" alt=""></span>
       </div>
     </header>
   
   <!-- Nav -->
     <nav>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><img src="./image/home.png" alt="" class="home"></li>
+        <li><img src="./image/arrow.png" alt="" class="arrow"></li>
+        <li><img src="./image/message.png" alt="" class="message"></li>
+        <li><img src="./image/setting.png" alt="" class="setting"></li>
       </ul>
     </nav>
   
@@ -44,72 +49,81 @@
       <section class="sec1">
         <div class="sec1-box">
           <span class="account-number">355-673877-78773</span>
-          <span class="transfer">이체</span>
+          <button class="transfer">이체</button>
           <p class="budget">1,240,000<small>원</small></p>
           <div class="budget-bar">
-            <div>
+            <div class="control_bar">
               <div>
-                <div class="yellow-bar"></div>
-                <div class="grey-bar"></div>
+                <div class="gray-bar">
+                  <div class="yellow-bar"></div> 
+                </div>               
               </div>
-              <div class="orange"></div>
+              <div class="orange"></div>            
             </div>
-            <span></span>
+            <span><img src="./image/mdi_bar_chart.png" alt="" class="chart"></span>
           </div>
-          <span class="goal"></span>
+          <span class="goal">5일 동안 210,000원 남음</span>
         </div>
       </section>
 
       <aside class="loan">
-        <a href=""></a>
+        <span>지금 낮은 이자로 생활대출을 신청하세요!</span>
+        <a href="">Go</a>
       </aside>
     
       <section class="sec2">   
         <span class="updownscroll"></span>
-          <div class="hope-list">
-            <div class="hope-bar">
-              <span></span>
-              <span></span>
-              <div class="hope-bar-gage"></div>
-            </div>
-            <div class="hope-bar">
-              <span></span>
-              <span></span>
-              <div class="hope-bar-gage"></div>
+        <div class="hope-list">
+          <div class="hope-bar">
+            <div class="hope-bar-gage">
+              <span class="memo">
+                <span>여행가자!</span>
+                <span>842,200원</span>
+              </span>
             </div>
           </div>
 
-        <div class="today-spend">
-          <div>
-            <h4></h4>
-            <small></small> 
+          <div class="hope-bar">            
+            <div class="hope-bar-gage">
+              <span></span>
+              <span></span>
+            </div>
           </div>
-          <ul>
-            <li>
-              <span class="money-plus"></span>
-              <span class="money-minus"></span>
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
         </div>
-        
-        <div class="yesterday-spend">
-          <div>
-            <h4></h4>
-            <small></small> 
+
+        <div class="spend">
+          <div class="day-spend">
+            <div class="spend-title">
+              <h4>날짜</h4>
+              <small>금액</small> 
+            </div>
+            <ul>
+              <li>
+                <span class="money-plus"></span>
+                <span class="money-minus"></span>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
           </div>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          
+          <div class="day-spend">
+            <div>
+              <h4></h4>
+              <small></small> 
+            </div>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </div>
-      
+
       </section>
       
     </main>
