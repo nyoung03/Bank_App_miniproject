@@ -5,9 +5,10 @@ body {
 .cont-wrap {
   background-color: #eeece5;
   width: 375px;
-  /* height: 812px; */
+  height: 812px;
   margin: auto;
   position: relative;
+  overflow: hidden;
 }
 .top_bar {
   width: 375px;
@@ -173,6 +174,7 @@ main .loan a {
   margin-left: 6px;
   color: #000;
 }
+
 main .sec2 {
   width: 375px;
   height: 383px;
@@ -189,21 +191,27 @@ main .sec2 .updownscroll {
   margin-left: 163px;
   margin-bottom: 9px;
 }
-main .sec2 .hope-list {
-  border: 1px solid red;
+main .sec2 .hope {
   width: 308px;
   height: 49px;
   margin-top: 9px;
   margin-left: 30px;
-  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+main .sec2 .hope-list {
+  width: 455px;
+  height: 47px;
+  display: flex;
 }
 main .sec2 .hope-list .hope-bar {
-  position: absolute;
+  position: relative;
   width: 162px;
   height: 47px;
   background-color: #dadada;
-  bottom: 0;
-  left: 0;
+  /* bottom: 0;
+  left: 0; */
+  margin-right: 13px;
   border-radius: 6px;
 }
 main .sec2 .hope-list .hope-bar .hope-bar-gage {
@@ -211,24 +219,40 @@ main .sec2 .hope-list .hope-bar .hope-bar-gage {
   background: #ff5f00;
   border-radius: 6px 0px 0px 6px;
   height: 100%;
-  width: 50%;
+  width: 60%;
+}
+main .sec2 .hope-list .hope-bar .hope-bar-gage {
 }
 main .sec2 .hope-list .hope-bar .hope-bar-gage .memo {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
 }
+main .sec2 .hope-list .hope-bar .hope-bar-gage .memo > span {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 13px;
+}
+main .sec2 .hope-list .hope-bar .hope-bar-gage .memo > span:last-child {
+  margin-top: 0;
+}
+
 main .sec2 .spend {
   width: 302px;
-  /* border: 1px solid red; */
+  height: 100%;
+  border: 1px solid red;
   margin-top: 16px;
   margin-left: 36px;
+  overflow-y: scroll;
+}
+main .sec2 .spend::-webkit-scrollbar {
+  display: none;
 }
 main .sec2 .spend .day-spend {
   width: 302px;
   height: 231px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin-bottom: 38px;
 }
 main .sec2 .spend .day-spend .spend-title {
@@ -237,7 +261,7 @@ main .sec2 .spend .day-spend .spend-title {
   line-height: 21px;
   color: #000000;
   height: 21px;
-  border: 1px solid rebeccapurple;
+  /* border: 1px solid rebeccapurple; */
   padding: 0;
   display: flex;
 }
@@ -248,10 +272,24 @@ main .sec2 .spend .day-spend .spend-title small {
   margin-left: 182px;
 }
 main .sec2 .spend .day-spend li {
-  border: 1px solid black;
+  border-bottom: 1px solid #dcdcdc;
   height: 34px;
+  width: 302px;
   margin-top: 8px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #444444;
 }
+main .sec2 .spend .day-spend li .history {
+  font-weight: 350;
+  /* border: 1px solid red; */
+  margin-left: 0;
+}
+main .sec2 .spend .day-spend li .price {
+  /* font-weight: 300; */
+  float: right;
+}
+
 /* Nav */
 nav {
   position: absolute;
