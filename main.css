@@ -5,7 +5,7 @@ body {
 .cont-wrap {
   background-color: #eeece5;
   width: 375px;
-  height: 812px;
+  /* height: 812px; */
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -177,11 +177,19 @@ main .loan a {
 
 main .sec2 {
   width: 375px;
-  height: 383px;
+  height: auto;
   margin-top: 21px;
   background: #f5f5f5;
   box-shadow: 0px -5px 14px rgba(189, 144, 28, 0.08);
   border-radius: 30px 30px 0px 0px;
+  /* position: absolute; */
+  transition: all 0.4s;
+}
+.sec2.up {
+  transform: translateY(-251px);
+  transition: all 0.4s;
+}
+main .sec2 .scroll {
 }
 main .sec2 .updownscroll {
   width: 48px;
@@ -193,55 +201,139 @@ main .sec2 .updownscroll {
 }
 main .sec2 .hope {
   width: 308px;
-  height: 49px;
-  margin-top: 9px;
-  margin-left: 30px;
+  height: 50px;
   overflow: hidden;
-  display: inline-block;
+  margin: 0 auto 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+main .sec2 .hope::-webkit-scrollbar {
+  display: none;
 }
 main .sec2 .hope-list {
-  width: 455px;
-  height: 47px;
+  width: 500px;
+  height: 50px;
   display: flex;
+  /* margin: 0 auto 20px/; */
+  /* border: 1px solid blue; */
 }
 main .sec2 .hope-list .hope-bar {
-  position: relative;
+  /* position: relative; */
   width: 162px;
-  height: 47px;
+  /* height: 47px; */
   background-color: #dadada;
   /* bottom: 0;
   left: 0; */
-  margin-right: 13px;
+  /* margin-right: 13px; */
   border-radius: 6px;
 }
-main .sec2 .hope-list .hope-bar .hope-bar-gage {
-  position: absolute;
-  background: #ff5f00;
+main .sec2 .hope-list .hope-bar:first-child {
+  margin-right: 13px;
+  box-sizing: border-box;
+}
+main .sec2 .hope-list .hope-bar .hope-bargage {
   border-radius: 6px 0px 0px 6px;
+  /* width: 50%; */
+  height: auto;
+  box-sizing: border-box;
+}
+main .sec2 .hope-list .hope-bar > .gage1 {
+  width: 50%;
   height: 100%;
-  width: 60%;
+  background: #ff5f00;
 }
-main .sec2 .hope-list .hope-bar .hope-bar-gage {
+main .sec2 .hope-list .hope-bar > .gage2 {
+  width: 70%;
+  height: 100%;
+  background: #feb700;
 }
-main .sec2 .hope-list .hope-bar .hope-bar-gage .memo {
+main .sec2 .hope-list .hope-bar .hope-bargage p {
+  /* display: block; */
+  margin-left: 13px;
+  padding-top: 5px;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
+  /* border: 1px solid blue; */
 }
-main .sec2 .hope-list .hope-bar .hope-bar-gage .memo > span {
-  display: inline-block;
-  margin-top: 5px;
-  margin-left: 13px;
+main .sec2 .hope-list .hope-bar .hope-bargage > span:first-child {
 }
-main .sec2 .hope-list .hope-bar .hope-bar-gage .memo > span:last-child {
-  margin-top: 0;
+main .sec2 .hope-list .hope-bar .hope-bargage > span:last-child {
+  padding-top: 0px;
+}
+main .sec2 .hope-list .hope-plus {
+  /* border: 1px solid red; */
+  display: inline-flex;
+}
+main .sec2 .hope-list .hope-plus > img {
+  /* border: 1px solid blue; */
+  margin-left: 19px;
+  margin-top: 15px;
+  width: 22px;
+  height: 22px;
+}
+
+/* 저금통 */
+main .sec2 .hope-list .hope-plus > .make {
+  /* border: 1px solid blue; */
+  cursor: pointer;
+  margin-left: 6px;
+  color: #ff5f00;
+  font-weight: 500;
+  font-size: 12px;
+  padding-top: 19px;
+}
+main .sec2 .hope-list .hope-plus .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sec2 .hope-list .hope-plus .modal .bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+main .sec2 .hope-list .hope-plus .modalBox {
+  position: absolute;
+  background-color: #fff;
+  width: 213px;
+  height: 150px;
+}
+main .sec2 .hope-list .hope-plus .modalBox input {
+  padding: 5px;
+}
+main .sec2 .hope-list .hope-plus .modalBox .name {
+  padding: 5px;
+  margin: 10px;
+}
+main .sec2 .hope-list .hope-plus .modalBox .money_goal {
+  padding: 0 5px;
+  margin: 10px;
+}
+main .sec2 .hope-list .hope-plus .modalBox .closeBtn {
+  background-color: #f9b514;
+  width: 80px;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+main .sec2 .hope-list .hope-plus .hidden {
+  display: none;
 }
 
 main .sec2 .spend {
   width: 302px;
   height: 100%;
-  border: 1px solid red;
+
   margin-top: 16px;
   margin-left: 36px;
   overflow-y: scroll;
@@ -292,11 +384,12 @@ main .sec2 .spend .day-spend li .price {
 
 /* Nav */
 nav {
-  position: absolute;
+  position: fixed;
   width: 375px;
   height: 76px;
   bottom: 0;
   background: linear-gradient(163.63deg, #00bdb2 11.35%, #c4e7b8 139.96%);
+  z-index: 1;
 }
 nav ul {
   display: flex;

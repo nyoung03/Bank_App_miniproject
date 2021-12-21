@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />  
 <link rel="stylesheet" href="./main.css">
+<script defer src="./main.js"></script>
 
 
 </head>
@@ -74,39 +75,50 @@
       </aside>
     
       <section class="sec2">   
+        <div class="scroll">
         <span class="updownscroll"></span>
+        </div>
         
         <div class="hope">
-        <ul class="hope-list">
+        <div class="hope-list">
           
-          <li class="hope-bar">
-            <div class="hope-bar-gage">
-              <span class="memo">
-                <span>여행가자!</span>
-                <span>842,200원</span>
-              </span>
+          <div class="hope-bar">
+            <div class="hope-bargage gage1">
+                <p>여행가자!</p>
+                <p>842,200원</p>
             </div>
-          </li>
+          </div>
 
-          <li class="hope-bar">            
-            <div class="hope-bar-gage">
-              <span class="memo">
-                <span>냉장고 사기</span>
-                <span>142,200원</span>
-              </span>
+          <div class="hope-bar">            
+            <div class="hope-bargage gage2">
+                <p>냉장고 사기</p>
+                <p>142,200원</p>
             </div>
-          </li>
-
-          <!-- <li class="hope-bar">            
-            <div class="hope-bar-gage">
-              <span class="memo">
-                <span>냉장고 사기</span>
-                <span>142,200원</span>
-              </span>
-            </div>
-          </li> -->
+          </div>
+          
+          <!-- 저금통 생성 -->
         
-        </ul>
+
+          <div class="hope-plus">
+            <img src="./image/plus.png" alt="">
+            <span class="make">저금통 만들기</span>
+            <div class="modal hidden">
+              <div class="bg"></div>
+              <div class="modalBox">
+                <div class="name">
+                <input type="text" placeholder="저금통 이름">
+                </div>
+                <div class="money_goal">
+                  <input type="text" placeholder="목표 금액">
+                  </div>
+                <div class="closeBtn">Close</div>
+              </div>
+            </div>
+            
+          </div>
+
+
+        </div>
       </div>
 
         <div class="spend">
