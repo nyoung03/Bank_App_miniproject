@@ -336,14 +336,12 @@ main .sec2 .spend {
 
   margin-top: 16px;
   margin-left: 36px;
-  overflow-y: scroll;
 }
 main .sec2 .spend::-webkit-scrollbar {
   display: none;
 }
 main .sec2 .spend .day-spend {
   width: 302px;
-  height: 231px;
   /* border: 1px solid blue; */
   margin-bottom: 38px;
 }
@@ -356,12 +354,12 @@ main .sec2 .spend .day-spend .spend-title {
   /* border: 1px solid rebeccapurple; */
   padding: 0;
   display: flex;
+  justify-content: space-between;
 }
 main .sec2 .spend .day-spend .spend-title small {
   font-weight: 500;
   color: #b4b4b4;
   /* border: 1px solid lime; */
-  margin-left: 182px;
 }
 main .sec2 .spend .day-spend li {
   border-bottom: 1px solid #dcdcdc;
